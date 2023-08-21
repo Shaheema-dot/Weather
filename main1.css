@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.weather-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    /*background-image: url('default-background.jpg'); Default background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cityInput {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+#searchBtn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.forecast-day {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.rainy-background {
+    background-image: url('rainy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.haze-background {
+    background-image: url('haze.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.cloudy-background {
+    background-image: url('cloudy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.sunny-background {
+    background-image: url('sunny.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.snowy-background {
+    background-image: url('snowy.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+@media screen and (max-width: 1200px) {
+    .weather-container {
+        max-width: 400px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .weather-container {
+        max-width: 90%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .weather-container {
+        max-width: 95%;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 360px) and (orientation: portrait) {
+    body {
+        background-size: contain;
+    }
+
+    .weather-container {
+        max-width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+}
+
+
+.haze-bg {
+    background-image: url('haze-background.jpg');
+}
